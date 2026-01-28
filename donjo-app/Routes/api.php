@@ -144,8 +144,10 @@ Route::group('internal_api', ['namespace' => 'internal_api'], static function ()
 // =======================================================================================
 // API KHUSUS APLIKASI MOBILE
 // =======================================================================================
-Route::group('api/mobile', ['namespace' => 'internal_api'], static function (): void {
+Route::group('api/mobile', ['namespace' => 'mobile_api'], static function (): void {
     Route::post('login', 'Auth@login');
+    Route::post('logout', 'Auth@logout');
+    Route::post('ubah_profil', 'Auth@ubah_profil');
     Route::get('profil', 'Profil@index');
 });
 
