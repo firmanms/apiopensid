@@ -15,10 +15,7 @@ yarn-error.log
 *.rar
 
 # OpenSID specific
-/desa/upload/
-/desa/arsip/
-/desa/cache/
-/desa/backup/
+/desa/
 /backup_inkremental/
 
 # Framework/App storage
